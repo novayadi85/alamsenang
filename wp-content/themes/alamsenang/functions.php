@@ -24,13 +24,17 @@ if ( ! function_exists( 'wpt_setup' ) ):
 	function wpt_register_css() {
 		wp_register_style( 'bootstrap.min', get_template_directory_uri() . '/assets/bootstrap/css/bootstrap.min.css' );
 		wp_enqueue_style( 'bootstrap.min' );
+		
+		wp_register_style( 'app', get_template_directory_uri() . '/assets/web/css/app.css',array('style'));
+		wp_enqueue_style( 'app' );
+		
 	}
 
 	add_action( 'wp_enqueue_scripts', 'wpt_register_css' );
 	add_action( 'init', 'wpt_register_js' );
 
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
-
+	
 	add_theme_support( 'post-thumbnails' );
 
 	//wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array ( 'jquery' ), 1.1, true);

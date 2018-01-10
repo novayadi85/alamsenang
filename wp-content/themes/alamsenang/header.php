@@ -14,7 +14,11 @@
 		<div class="top-links container">
 			<div class="row">
 				<div class="col-md-4">
-					
+					<div class="logo">
+						<a title="<?php echo( get_bloginfo( 'title' ) ); ?>" href="<?php echo get_home_url();?>">
+							<img src="<?php bloginfo('template_directory'); ?>/images/logo.png">
+						</a>
+					</div>
 				</div>
 				<div class="col-md-4">
 					
@@ -28,12 +32,22 @@
 		<div class="top-menu container">
 			<div class="row">
 				<div class="col-md-12">
-					<nav class="navbar navbar-expand-md navbar-light bg-white">
+					<nav class="navbar navbar-expand-md bg-default">
 					  <a class="navbar-brand" href="#">Navbar</a>
 					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					  </button>
 
+					  <?php /* Primary navigation */
+							/* wp_nav_menu( array(
+							  'menu' => '2',
+							  'depth' => 2,
+							  'container' => false,
+							  'menu_class' => 'nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm',
+							  'walker' => new wp_bootstrap_navwalker())
+							); */
+							?>
+					  
 					  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
 						<ul class="navbar-nav mr-auto">
 						  <li class="nav-item active">
@@ -65,3 +79,4 @@
 		</div>
 		<!-- menu-->
 	</header>
+	<div class="container">

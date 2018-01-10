@@ -1,0 +1,65 @@
+$font:    Helvetica, sans-serif
+$primary-color: #4a4db9
+$secondary-color: #00a24c
+$front-color: #262986 
+$std-color: #fff
+
+body
+  font: 100% $font
+  color: $primary-color
+  
+%equal-heights
+  display: flex
+  flex-wrap: wrap
+
+%message-shared
+  border: 1px solid #ccc
+  padding: 10px
+  color: $front-color
+
+.message
+  @extend %message-shared
+
+.success
+  @extend %message-shared
+  border-color: green
+
+
+.error
+  @extend %message-shared
+  border-color: red
+
+
+.warning
+  @extend %message-shared
+  border-color: yellow
+  
+.box-border
+  color : $primary-color
+  border : 1px solid $front-color
+  
+.bg-default
+  background : $primary-color
+  color : $std-color
+  
+a, a:hover
+  color: $std-color
+  
+.mt--1
+  margin-top: 1em
+
+.mt--half
+  margin-top: 0.5em
+  
+.bg-second
+  background: $secondary-color
+  color: $std-color
+  border-color: $secondary-color
+  
+footer p 
+  margin-top: 0.8em
+  
+  
+.logo img
+  width: auto
+  max-height: 150px
