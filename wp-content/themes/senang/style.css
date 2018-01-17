@@ -1,0 +1,75 @@
+/*
+Theme Name:     Senang Sekali
+Theme URI:    	http://alamsenang.com
+Author:         Komang Novayadi
+Author URI:     https://novayadi.com
+Description:  	Alam senang is the perfect theme for your WooCommerce project. D
+Version:      	2.2.5
+Template:       storefront
+License:        GNU General Public License v2 or later
+License URI:    http://www.gnu.org/licenses/gpl-2.0.html
+Tags:           light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Text Domain:    stotefornt-child
+*/
+
+body{
+	margin-top:0px;
+	font-size:16px;
+}
+
+footer:before {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.hentry.type-page .entry-header  , .woocommerce-products-header{
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 10px !important;
+	text-align: left !important
+}
+
+.col2-set .col-1, .col2-set .col-2 {
+    max-width: unset !important
+}
+
+.woocommerce-result-count {
+    float: left;
+    position: relative;
+    margin-bottom: 0;
+    padding: 1.027em 0;
+}
+
+/* ul.products li.product img {
+    display: block;
+    margin: 0;
+} */
+
+.site-header-cart {
+    position: relative;
+    background: #4a4db9;
+    padding: 10px 0;
+    border-radius: 0px 0px 1px 13px;
+}
+
+.cart-contents , .cart-contents:hover{
+  color: #fff !important
+}
+.news-item h5{
+	color: #262986;
+	font-size: 18px;
+}
+
+.green-box h1,.green-box  h2,.green-box  h3,.green-box  h4,.green-box  h5,.green-box  h6{
+	color:#fff
+}
+
+.form-row{
+	margin-bottom:20px;
+}
+
+.nav-link:hover{
+	background-color:#fff;
+	color:#4a4db9;
+}
